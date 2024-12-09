@@ -1,5 +1,1 @@
-# helo
-# Pong
-# Pong
-# Pong
-# Pong
+Welcome to Pong Game
