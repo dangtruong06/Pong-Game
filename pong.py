@@ -18,7 +18,6 @@ class MAIN():
     def display_background(self):
         screen.blit(background, (0,0))
 
-
     def update(self):
         self.display_background()
         player.draw_player()
@@ -33,8 +32,7 @@ class BOT():
 
         self.red = pygame.image.load('red.png').convert_alpha()
         self.red_rect = self.red.get_rect(center = (player.x_pos, player.y_pos))
-
-        self.speed = 3
+        self.speed = 4
 
     def draw_bot(self):
         screen.blit(self.red, self.red_rect)
@@ -62,7 +60,7 @@ class PONG():
         self.x_pos = 505
         self.y_pos = random.randint(100,500)
         
-        self.x_speed = 7
+        self.x_speed = 8
         self.y_speed = 3
 
         self.v_direction = ['up', 'down']
@@ -106,9 +104,6 @@ class PONG():
             self.x_speed = -self.x_speed
 
         
-    
-    
-
 #class objects
 main = MAIN()
 pong = PONG()
