@@ -9,7 +9,7 @@ clock = pygame.time.Clock()
 pygame.display.set_caption('Pong')
 
 #images
-background = pygame.image.load('pongback.png').convert_alpha()
+background = pygame.image.load('images/pongback.png').convert_alpha()
 
 class MAIN():
     def __init__(self):
@@ -30,7 +30,7 @@ class MAIN():
 class BOT():
     def __init__(self):
 
-        self.red = pygame.image.load('red.png').convert_alpha()
+        self.red = pygame.image.load('images/red.png').convert_alpha()
         self.red_rect = self.red.get_rect(center = (player.x_pos, player.y_pos))
         self.speed = 4
 
@@ -48,7 +48,7 @@ class PlAYER():
         self.x_pos = 100 
         self.y_pos = 300
 
-        self.blue = pygame.image.load('blue.png').convert_alpha()
+        self.blue = pygame.image.load('images/blue.png').convert_alpha()
 
         self.blue_rect = self.blue.get_rect(center = (self.x_pos +800, self.y_pos))
 
@@ -69,7 +69,7 @@ class PONG():
         self.h_direction = ['left', 'right']
         self.horizontal = random.choice(self.h_direction)
 
-        self.pong = pygame.image.load('pong.png').convert_alpha()
+        self.pong = pygame.image.load('images/pong.png').convert_alpha()
         self.pong_rect = self.pong.get_rect(center = (self.x_pos, self.y_pos))
     
     def move_pong(self):
